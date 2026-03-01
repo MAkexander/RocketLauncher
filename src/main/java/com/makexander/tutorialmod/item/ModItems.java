@@ -17,7 +17,7 @@ public class ModItems {
     // Create raw alexandrite
     public static final RegistryObject<Item> RAW_ALEXANDRITE = ITEMS.register("raw_alexandrite", () -> new Item(new Item.Properties()));
 
-    // Smth ... idk (Register the items on the event bus?
+    // Smth ... idk (Register the items on the event bus?)
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
