@@ -67,6 +67,7 @@ public class TutorialMod {
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
             // add rocket launcher ammunition to the combat creative mode tab
             event.accept(ModItems.ROCKET_LAUNCHER_AMMUNITION);
+            event.accept(ModItems.ROCKET_LAUNCHER);
         }
     }
 

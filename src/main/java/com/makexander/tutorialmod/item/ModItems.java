@@ -23,6 +23,9 @@ public class ModItems {
     // Create rocket launcher ammunition
     public static final RegistryObject<Item> ROCKET_LAUNCHER_AMMUNITION = ITEMS.register("rocket_launcher_ammunition", () -> new Item(new Item.Properties()));
 
+    // Create rocket launcher
+    public static final RegistryObject<Item> ROCKET_LAUNCHER = ITEMS.register("rocket_launcher", () -> new Item(new Item.Properties()));
+
     // Smth ... idk (Register the items on the event bus?)
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
