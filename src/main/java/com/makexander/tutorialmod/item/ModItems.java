@@ -7,6 +7,9 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+/**
+ * Custom class to define all items added by the mod.
+ */
 public class ModItems {
     // "List" to gather the items for registration
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TutorialMod.MOD_ID);
@@ -16,6 +19,9 @@ public class ModItems {
 
     // Create raw alexandrite
     public static final RegistryObject<Item> RAW_ALEXANDRITE = ITEMS.register("raw_alexandrite", () -> new Item(new Item.Properties()));
+
+    // Create rocket launcher ammunition
+    public static final RegistryObject<Item> ROCKET_LAUNCHER_AMMUNITION = ITEMS.register("rocket_launcher_ammunition", () -> new Item(new Item.Properties()));
 
     // Smth ... idk (Register the items on the event bus?)
     public static void register(IEventBus eventBus) {

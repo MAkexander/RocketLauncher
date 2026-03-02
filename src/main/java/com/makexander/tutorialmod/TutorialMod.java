@@ -1,5 +1,6 @@
 package com.makexander.tutorialmod;
 
+import com.makexander.tutorialmod.block.ModBlocks;
 import com.makexander.tutorialmod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -37,6 +38,7 @@ public class TutorialMod {
 
         // Smth ... idk
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -55,6 +57,16 @@ public class TutorialMod {
             // add alexandrite to the ingredients creative mode tab
             event.accept(ModItems.ALEXANDRITE);
             event.accept(ModItems.RAW_ALEXANDRITE);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            // add alexandrite block to the building blocks creative mode tab
+            event.accept(ModBlocks.ALEXANDRITE_BLOCK);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) {
+            // add rocket launcher ammunition to the combat creative mode tab
+            event.accept(ModItems.ROCKET_LAUNCHER_AMMUNITION);
         }
     }
 
