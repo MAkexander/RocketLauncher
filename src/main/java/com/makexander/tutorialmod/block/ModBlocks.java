@@ -27,15 +27,13 @@ public class ModBlocks {
 
     // Alexandrite Block
     public static final RegistryObject<Block> ALEXANDRITE_BLOCK = registerBlock("alexandrite_block",
-            () -> new Block(
-                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)
-            ));
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
-    // Raw Alexandrite Block (check with tutorial!)
+    // Raw Alexandrite Block
     public static final RegistryObject<Block> RAW_ALEXANDRITE_BLOCK = registerBlock("raw_alexandrite_block",
-            () -> new Block(
-                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)
-            ));
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops()));
 
     // helper method to register the block and the block item for a custom block
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
