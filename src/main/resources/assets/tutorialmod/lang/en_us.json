@@ -1,6 +1,10 @@
 {
   "item.tutorialmod.alexandrite": "Alexandrite",
   "item.tutorialmod.raw_alexandrite": "Raw Alexandrite",
+
+  "block.tutorialmod.alexandrite_block": "Block of Alexandrite",
+  "block.tutorialmod.raw_alexandrite_block": "Block of Raw Alexandrite",
+
   "item.tutorialmod.rocket_launcher_ammunition": "Rocket launcher ammunition",
   "item.tutorialmod.rocket_launcher": "Rocket launcher"
 }

@@ -62,6 +62,7 @@ public class TutorialMod {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             // add alexandrite block to the building blocks creative mode tab
             event.accept(ModBlocks.ALEXANDRITE_BLOCK);
+            event.accept(ModBlocks.RAW_ALEXANDRITE_BLOCK);
         }
 
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {

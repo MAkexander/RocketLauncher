@@ -18,20 +18,24 @@ import java.util.function.Supplier;
  * Custom class to define all new blocks added by the mod.
  * Needs to register the block (placable object) as well
  * as the block item.
+ * Needs to have a model in block, items and a texture as
+ * well as a loottable to drop items.
  */
 public class ModBlocks {
     // create a new register for the custom blocks of the mod
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, TutorialMod.MOD_ID);
 
-    // Alexandrite Block, requires a loottable to drop items!
-    public static final RegistryObject<Block> ALEXANDRITE_BLOCK = registerBlock(
-            "alexandrite_block", () -> new Block(
-                    BlockBehaviour.Properties.of()
-                            .strength(4f)
-                            .requiresCorrectToolForDrops()
-                            .sound(SoundType.AMETHYST)
-            )
-    );
+    // Alexandrite Block
+    public static final RegistryObject<Block> ALEXANDRITE_BLOCK = registerBlock("alexandrite_block",
+            () -> new Block(
+                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)
+            ));
+
+    // Raw Alexandrite Block (check with tutorial!)
+    public static final RegistryObject<Block> RAW_ALEXANDRITE_BLOCK = registerBlock("raw_alexandrite_block",
+            () -> new Block(
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)
+            ));
 
     // helper method to register the block and the block item for a custom block
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
