@@ -1,7 +1,7 @@
 
 # Tutorial Datapack
 
-Tutorial (stand Alex): https://youtu.be/Y2w0PgvABVU?list=PLKGarocXCE1GspJBXQEGuhazihZCSSLmK&t=450
+Tutorial (stand Alex): https://www.youtube.com/watch?v=9wCQkJtwqUQ&list=PLKGarocXCE1GspJBXQEGuhazihZCSSLmK&index=5
 Ziel aktuell: funktionierenden Rocketlauncher hinzufügen
 
 ===============================
