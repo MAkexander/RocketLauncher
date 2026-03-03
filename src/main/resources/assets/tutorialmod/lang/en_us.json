@@ -5,6 +5,12 @@
   "block.tutorialmod.alexandrite_block": "Block of Alexandrite",
   "block.tutorialmod.raw_alexandrite_block": "Block of Raw Alexandrite",
 
+  "creativetab.tutorialmod.alexandrite_items": "Alexandrite Items",
+  "creativetab.tutorialmod.alexandrite_blocks": "Alexandrite Blocks",
+
   "item.tutorialmod.rocket_launcher_ammunition": "Rocket launcher ammunition",
-  "item.tutorialmod.rocket_launcher": "Rocket launcher"
+  "item.tutorialmod.rocket_launcher": "Rocket launcher",
+
+  "creativetab.tutorialmod.ammunition": "Ammunition",
+  "creativetab.tutorialmod.weapons": "Weapons"
 }

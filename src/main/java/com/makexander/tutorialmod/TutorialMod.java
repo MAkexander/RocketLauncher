@@ -1,9 +1,9 @@
 package com.makexander.tutorialmod;
 
 import com.makexander.tutorialmod.block.ModBlocks;
+import com.makexander.tutorialmod.item.ModCreativeModeTabs;
 import com.makexander.tutorialmod.item.ModItems;
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -37,6 +37,7 @@ public class TutorialMod {
         MinecraftForge.EVENT_BUS.register(this);
 
         // Smth ... idk
+        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -53,23 +54,7 @@ public class TutorialMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            // add alexandrite to the ingredients creative mode tab
-            event.accept(ModItems.ALEXANDRITE);
-            event.accept(ModItems.RAW_ALEXANDRITE);
-        }
-
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            // add alexandrite block to the building blocks creative mode tab
-            event.accept(ModBlocks.ALEXANDRITE_BLOCK);
-            event.accept(ModBlocks.RAW_ALEXANDRITE_BLOCK);
-        }
-
-        if (event.getTabKey() == CreativeModeTabs.COMBAT) {
-            // add rocket launcher ammunition to the combat creative mode tab
-            event.accept(ModItems.ROCKET_LAUNCHER_AMMUNITION);
-            event.accept(ModItems.ROCKET_LAUNCHER);
-        }
+        //
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
