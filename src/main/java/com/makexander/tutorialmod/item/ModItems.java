@@ -31,7 +31,7 @@ public class ModItems {
     // Create rocket launcher, not stackable
     public static final RegistryObject<Item> ROCKET_LAUNCHER = ITEMS.register("rocket_launcher", () -> new RocketLauncher(new Item.Properties().durability(64)));
 
-    // Smth ... idk (Register the items on the event bus?)
+    // Smth ... I don't know (Register the items on the event bus?)
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
