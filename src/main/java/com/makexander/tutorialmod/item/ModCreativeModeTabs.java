@@ -37,12 +37,14 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModBlocks.ALEXANDRITE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_ALEXANDRITE_BLOCK.get());
+                        pOutput.accept(ModBlocks.ALEXANDRITE_ORE.get());
+                        pOutput.accept(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> AMMUNITION_TAB =
             CREATIVE_MODE_TABS.register("ammunition_tab", () -> CreativeModeTab.builder()
                     .withTabsBefore(ALEXANDRITE_BLOCKS_TAB.getId())  // to ensure the correct order of the tabs
-                    // ToDo: maybe change to better looking ammunition later?
+                    // ToDo: maybe change to rifle, hand gun ammunition later?
                     .icon(() -> new ItemStack(ModItems.ROCKET_LAUNCHER_AMMUNITION.get()))
                     .title(Component.translatable("creativetab.tutorialmod.ammunition"))
                     // ToDo: Can be replaced with expression lambda?
