@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:stone_button"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "R": {
+      "item": "minecraft:firework_rocket"
+    },
+    "T": {
+      "item": "minecraft:tnt"
+    }
+  },
+  "pattern": [
+    "IBI",
+    "ITI",
+    "IRI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:rocket_launcher_ammunition"
+  }
+}
